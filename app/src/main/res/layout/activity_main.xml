@@ -7,6 +7,16 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/appEscolha2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="Computador 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/jogadorEscolha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,13 +27,13 @@
         app:layout_constraintStart_toStartOf="@+id/botaoPapel" />
 
     <TextView
-        android:id="@+id/appEscolha"
+        android:id="@+id/appEscolha1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="91dp"
-        android:layout_marginEnd="132dp"
-        android:text="Escolha app"
+        android:layout_marginTop="104dp"
+        android:text="Computador 1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -69,4 +79,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/botaoPapel" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:clickable="true"
+        android:onClick="onToggleClick"
+        android:text="Ligar Jogador 2"
+        android:textOff="Ligar Jogador 2"
+        android:textOn="Desligar Jogador 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
